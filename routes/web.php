@@ -26,6 +26,10 @@ Route::get('/contact', function(){
     return view('contact');
 });
 
+Route::get('/country', function(){
+    return view('country');
+})->middleware('country');
+
 
 
 
